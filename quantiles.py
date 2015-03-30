@@ -1,4 +1,4 @@
-def median_via_bin_search(l, q, tol):
+def quantile_via_bin_search(l, q, tol):
     low, high = None, None
     n = 0
     for item in l:
