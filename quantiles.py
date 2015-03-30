@@ -8,7 +8,7 @@ def quantile_via_bin_search(l, q, tol):
         if item > high or high is None:
             high = item
     
-    #Now binary searh for the median
+    #Now binary searh for the quantile
     guess = 1.*(high - low)/2 + low
     prev_guess = None
     while True:
