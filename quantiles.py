@@ -11,7 +11,7 @@ def quantile_via_bin_search(l, q, tol):
     #Now binary searh for the median
     guess = 1.*(high - low)/2 + low
     prev_guess = None
-    while True:#high > low and abs(high-low ) < tol:
+    while True:
         num_higher = 0
         for item in l:
             if item >= guess:
